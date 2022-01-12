@@ -1,0 +1,9 @@
+[source,bash]
+----
+$ echo '{
+  "name" : "허준",
+  "age" : 50
+}' | http POST 'http://localhost:8000/api/members' \
+    'Content-Type:application/json' \
+    'Accept:application/hal+json;charset=UTF-8'
+----

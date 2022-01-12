@@ -1,0 +1,22 @@
+[source,options="nowrap"]
+----
+{
+  "_links" : {
+    "self" : {
+      "href" : "http://localhost:8000/api/members/1"
+    },
+    "profile" : {
+      "href" : "http://localhost:8000/docs/index.html#resources-update-member"
+    }
+  },
+  "_embedded" : {
+    "member" : {
+      "id" : 1,
+      "name" : "허준",
+      "age" : 50,
+      "insertedAt" : "2022-01-12 22:26:00",
+      "updatedAt" : "2022-01-12 22:26:02"
+    }
+  }
+}
+----

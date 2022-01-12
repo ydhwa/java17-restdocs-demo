@@ -1,0 +1,26 @@
+[source,http,options="nowrap"]
+----
+HTTP/1.1 201 Created
+Content-Type: application/hal+json;charset=UTF-8
+Content-Length: 390
+
+{
+  "_links" : {
+    "self" : {
+      "href" : "http://localhost:8000/api/members"
+    },
+    "profile" : {
+      "href" : "http://localhost:8000/docs/index.html#resources-insert-member"
+    }
+  },
+  "_embedded" : {
+    "member" : {
+      "id" : 4,
+      "name" : "허준",
+      "age" : 50,
+      "insertedAt" : "2022-01-12 22:26:03",
+      "updatedAt" : null
+    }
+  }
+}
+----

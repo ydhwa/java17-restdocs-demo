@@ -1,0 +1,22 @@
+|===
+|Relation|Description
+
+|`+self+`
+|link to self
+
+|`+profile+`
+|document link
+
+|`+first+`
+|The first page of results
+
+|`+last+`
+|The last page of results
+
+|`+next+`
+|The next page of results
+
+|`+prev+`
+|The previous page of results
+
+|===

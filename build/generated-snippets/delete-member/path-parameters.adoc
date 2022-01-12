@@ -1,0 +1,8 @@
+.+/api/members/{id}+
+|===
+|Parameter|Description
+
+|`+id+`
+|id of member
+
+|===

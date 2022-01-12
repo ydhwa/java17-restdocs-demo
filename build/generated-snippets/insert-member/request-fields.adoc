@@ -1,0 +1,17 @@
+
+|===
+|Name|Type|Description|Optional|Max length
+
+|`+name+`
+|`+String+`
+|name
+|false
+|100
+
+|`+age+`
+|`+Number+`
+|age
+|false
+|
+
+|===

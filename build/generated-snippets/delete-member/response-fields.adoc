@@ -1,0 +1,12 @@
+|===
+|Path|Type|Description
+
+|`+_embedded.member+`
+|`+Object+`
+|member
+
+|`+_embedded.member.id+`
+|`+Number+`
+|id
+
+|===

@@ -1,0 +1,28 @@
+|===
+|Path|Type|Description
+
+|`+_embedded.member+`
+|`+Object+`
+|member
+
+|`+_embedded.member.id+`
+|`+Number+`
+|id
+
+|`+_embedded.member.name+`
+|`+String+`
+|name
+
+|`+_embedded.member.age+`
+|`+Number+`
+|age
+
+|`+_embedded.member.insertedAt+`
+|`+String+`
+|inserted timestamp
+
+|`+_embedded.member.updatedAt+`
+|`+String+`
+|updated timestamp
+
+|===

@@ -1,0 +1,44 @@
+|===
+|Path|Type|Description
+
+|`+_embedded.members+`
+|`+Array+`
+|list of member
+
+|`+_embedded.members[].id+`
+|`+Number+`
+|id
+
+|`+_embedded.members[].name+`
+|`+String+`
+|name
+
+|`+_embedded.members[].age+`
+|`+Number+`
+|age
+
+|`+_embedded.members[].insertedAt+`
+|`+String+`
+|inserted timestamp
+
+|`+_embedded.members[].updatedAt+`
+|`+String+`
+|updated timestamp
+
+|`+page.size+`
+|`+Number+`
+|elements size per page(default=20)
+
+|`+page.totalElements+`
+|`+Number+`
+|total element count of results
+
+|`+page.totalPages+`
+|`+Number+`
+|total page count
+
+|`+page.number+`
+|`+Number+`
+|current page
+
+|===

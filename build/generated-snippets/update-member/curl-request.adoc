@@ -1,0 +1,10 @@
+[source,bash]
+----
+$ curl 'http://localhost:8000/api/members/1' -i -X PUT \
+    -H 'Content-Type: application/json' \
+    -H 'Accept: application/hal+json;charset=UTF-8' \
+    -d '{
+  "name" : "허준",
+  "age" : 50
+}'
+----

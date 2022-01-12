@@ -1,0 +1,17 @@
+
+|===
+|Name|Description|Optional
+
+|`+name+`
+|name (allow partial match)
+|true
+
+|`+page+`
+|The page to retrieve (default=1)
+|true
+
+|`+size+`
+|Entries per page (default=20)
+|true
+
+|===

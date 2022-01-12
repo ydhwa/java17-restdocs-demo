@@ -1,0 +1,7 @@
+[source,options="nowrap"]
+----
+{
+  "name" : "허준",
+  "age" : 50
+}
+----

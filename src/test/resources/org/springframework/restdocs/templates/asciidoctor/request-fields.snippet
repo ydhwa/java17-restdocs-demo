@@ -1,0 +1,13 @@
+
+|===
+|Name|Type|Description|Optional|Max length
+
+{{#fields}}
+|{{#tableCellContent}}`+{{path}}+`{{/tableCellContent}}
+|{{#tableCellContent}}`+{{type}}+`{{/tableCellContent}}
+|{{#tableCellContent}}{{description}}{{/tableCellContent}}
+|{{#tableCellContent}}{{optional}}{{/tableCellContent}}
+|{{#tableCellContent}}{{#maxLength}}{{maxLength}}{{/maxLength}}{{/tableCellContent}}
+
+{{/fields}}
+|===

@@ -6,7 +6,6 @@ import org.junit.jupiter.api.Test;
 import org.springframework.restdocs.payload.JsonFieldType;
 import org.springframework.transaction.annotation.Transactional;
 
-import static org.junit.jupiter.api.Assertions.*;
 import static org.springframework.restdocs.mockmvc.MockMvcRestDocumentation.document;
 import static org.springframework.restdocs.payload.PayloadDocumentation.*;
 import static org.springframework.restdocs.request.RequestDocumentation.parameterWithName;
@@ -25,7 +24,7 @@ class MemberControllerTest extends BaseTestController {
                 .andExpect(status().isOk())
                 .andDo(document("{method-name}",
                         getPagingRequestParametersSnippet(
-                                parameterWithName("name").description("name (allow partial match)").optional()
+                                parameterWithName("name").description("name (allow partial match)").attributes(typeAttribute(JsonFieldType.STRING)).optional()
                         ),
                         getPagingLinksSnippet(),
                         getPagingResponseFieldsSnippet(
@@ -45,7 +44,7 @@ class MemberControllerTest extends BaseTestController {
                 .andExpect(status().isOk())
                 .andDo(document("{method-name}",
                         pathParameters(
-                                parameterWithName("id").description("id of member").optional()
+                                parameterWithName("id").description("id of member").attributes(typeAttribute(JsonFieldType.NUMBER)).optional()
                         ),
                         getLinksSnippet(),
                         relaxedResponseFields(
@@ -94,7 +93,7 @@ class MemberControllerTest extends BaseTestController {
                 .andExpect(status().isOk())
                 .andDo(document("{method-name}",
                         pathParameters(
-                                parameterWithName("id").description("id of member").optional()
+                                parameterWithName("id").description("id of member").attributes(typeAttribute(JsonFieldType.NUMBER)).optional()
                         ),
                         requestFields(
                                 fieldWithPath("name").description("name").type(JsonFieldType.STRING).attributes(maxLengthAttribute(100)),
@@ -118,7 +117,7 @@ class MemberControllerTest extends BaseTestController {
                 .andExpect(status().isOk())
                 .andDo(document("{method-name}",
                         pathParameters(
-                                parameterWithName("id").description("id of member").optional()
+                                parameterWithName("id").description("id of member").attributes(typeAttribute(JsonFieldType.NUMBER)).optional()
                         ),
                         getLinksSnippet(),
                         relaxedResponseFields(

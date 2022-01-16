@@ -1,16 +1,19 @@
 
 |===
-|Name|Description|Optional
+|Name|Type|Description|Optional
 
 |`+name+`
+|`+String+`
 |name (allow partial match)
 |true
 
 |`+page+`
+|`+Number+`
 |The page to retrieve (default=1)
 |true
 
 |`+size+`
+|`+Number+`
 |Entries per page (default=20)
 |true
 

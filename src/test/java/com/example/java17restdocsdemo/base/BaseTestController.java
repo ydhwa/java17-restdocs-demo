@@ -10,6 +10,7 @@ import org.springframework.restdocs.RestDocumentationExtension;
 import org.springframework.restdocs.hypermedia.LinkDescriptor;
 import org.springframework.restdocs.hypermedia.LinksSnippet;
 import org.springframework.restdocs.payload.FieldDescriptor;
+import org.springframework.restdocs.payload.JsonFieldType;
 import org.springframework.restdocs.payload.ResponseFieldsSnippet;
 import org.springframework.restdocs.request.ParameterDescriptor;
 import org.springframework.restdocs.request.RequestParametersSnippet;
@@ -113,8 +114,8 @@ public class BaseTestController {
 
     // reusing descriptors
     private final List<ParameterDescriptor> pagingRequestParameterDescriptors = Arrays.asList(
-            parameterWithName("page").description("The page to retrieve (default=1)").optional(),
-            parameterWithName("size").description("Entries per page (default=20)").optional()
+            parameterWithName("page").description("The page to retrieve (default=1)").attributes(typeAttribute(JsonFieldType.NUMBER)).optional(),
+            parameterWithName("size").description("Entries per page (default=20)").attributes(typeAttribute(JsonFieldType.NUMBER)).optional()
     );
     private final List<LinkDescriptor> linkDescriptors = Arrays.asList(
             linkWithRel("self").description("link to self"),
@@ -133,8 +134,11 @@ public class BaseTestController {
             fieldWithPath("page.number").description("current page")
     );
 
-    // other properties
+    // other attributes
     protected Attributes.Attribute maxLengthAttribute(int maxLength) {
         return new Attributes.Attribute("maxLength", maxLength);
+    }
+    protected Attributes.Attribute typeAttribute(JsonFieldType fieldType) {
+        return new Attributes.Attribute("type", fieldType.toString());
     }
 }

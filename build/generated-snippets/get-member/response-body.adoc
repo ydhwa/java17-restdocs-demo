@@ -14,7 +14,7 @@
       "id" : 1,
       "name" : "홍길동",
       "age" : 30,
-      "insertedAt" : "2022-01-12 22:26:00",
+      "insertedAt" : "2022-01-16 21:46:51",
       "updatedAt" : null
     }
   }

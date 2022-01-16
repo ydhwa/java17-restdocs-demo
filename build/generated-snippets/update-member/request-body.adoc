@@ -1,7 +1,7 @@
 [source,options="nowrap"]
 ----
 {
-  "name" : "허준",
+  "name" : "�뿀以�",
   "age" : 50
 }
 ----

@@ -18,7 +18,7 @@ Content-Length: 390
       "id" : 4,
       "name" : "허준",
       "age" : 50,
-      "insertedAt" : "2022-01-12 22:26:03",
+      "insertedAt" : "2022-01-16 21:46:53",
       "updatedAt" : null
     }
   }
